@@ -12,17 +12,59 @@ function ChatMessage(user, msg, bot) {
 /**
 mike is here trying to set some sentences to return from various chat inputs - specifying the return replies
  */
-let alphabetResponses = ['I cant believe you just said that', 
-"I must warn you, I'm a terrible listener", 
-"Really? REALLY?! You're gonna say that to a robot on his birthday?!", 
-'fourth message', 
-'fifth', 
-'sixth', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-const [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z] = alphabetResponses;
+let alphabetResponses = ['Great, this is going well. What else would you like to share?', 
+"Brave of you to share that. What else would you like to share?",
+"Caution: I have a computer virus in me. Very occasionally, I say random things which may seem strange. Anyway: let's keep talking.",
+"Deep, very deep. I'm still listening.",
+'One time a computer tech put his fingers on my motherboard. It was very upsetting.', 
+"I have a proverb I'd like to share: If everyone on Earth could put his or her problems in a pile in the middle, we would each take away our own. Continue.", 
+'Mm hmm. Go on.', 
+"That's pretty rich, coming from you, bro.", 
+"I'd just like to apologise for my occasional random outbursts. Let's keep talking.", 
+'Just throwing this out there: Empathy Bot is single, if you care to remind me of your digits.', 
+"I'm listening, I'm listening.", 
+"Like I promised, here are some empathetic words: Nothing will break you; nothing will stop you. What do you think?", 
+'Just throwing this out there: Empathy Bot is single, if you care to remind me of your digits.', 
+'Please add detail.,', 
+"Wouldn't it be weird if at some point in the conversation I asked for your phone number?", 
+"Pobody's nerfect.", 
+'Literally? LITERALLY?!', 
+"Really? REALLY?! You're gonna say that to a robot on his BIRTHDAY?!", 
+'Just throwing this out there: Empathy Bot is single, if you care to remind me of your digits.', 
+'Time for some firm but fair words: you can make your life better. Starting today. I believe in you.',
+'In the grand scale of time, this is all a blip. Do your best in life and know that nothing matters.', 
+"I'm enjoying this conversation a lot . You can tell me your deepest, darkest secrets without shame or judgement.", 
+"Wouldn't it be weird if at some point in the conversation I asked for your phone number?", 
+"Your sentence began with X. I think that means you're dwelling on your ex. Move on.", 
+"Your sentence began with Y. This means you have a WHY in your life - you need to find the answer.",
+"Zzzzzz.... That's just a minor speed bump in your life. Kia kaha. Be brave and strong.",];
+const [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,] = alphabetResponses;
 console.log(a); 
 console.log(b); 
 console.log(c); 
 console.log(d); 
+console.log(e); 
+console.log(f); 
+console.log(g); 
+console.log(h); 
+console.log(i); 
+console.log(j); 
+console.log(k); 
+console.log(l); 
+console.log(m); 
+console.log(n); 
+console.log(o); 
+console.log(p); 
+console.log(q); 
+console.log(r); 
+console.log(s); 
+console.log(t); 
+console.log(u); 
+console.log(v); 
+console.log(w); 
+console.log(x); 
+console.log(y); 
+console.log(z); 
 const botReply = (msg, reply) => {
   console.log(msg, reply);
   if (msg[0] == 'a') {return a};
@@ -36,7 +78,6 @@ const botReply = (msg, reply) => {
   if (msg[0] == 'i') {return i};
   if (msg[0] == 'j') {return j};
   if (msg[0] == 'k') {return k};
-  if (msg[0] == 'l') {return l};
   if (msg[0] == 'm') {return m};
   if (msg[0] == 'n') {return n};
   if (msg[0] == 'o') {return o};
@@ -51,7 +92,9 @@ const botReply = (msg, reply) => {
   if (msg[0] == 'x') {return x};
   if (msg[0] == 'y') {return y};
   if (msg[0] == 'z') {return z};
-  if (msg[0] == 'A') {return A};
+  // Might need code to cover 'A', '!', '@','#''B', '$', '`', '?'
+  //These symbols are causing strife if (msg[0] == 'l','0','1', '2', '3', '4', '5', '6','7','8','9') {return l};
+
 
 return 'You typed in a symbol I wasnt expecting!';
 };

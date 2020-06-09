@@ -11,7 +11,7 @@ body {
 }
 
 #chatbot-interface {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   margin-top: 1vh;
 }
