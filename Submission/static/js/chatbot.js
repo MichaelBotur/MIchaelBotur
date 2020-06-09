@@ -12,7 +12,12 @@ function ChatMessage(user, msg, bot) {
 /**
 mike is here trying to set some sentences to return from various chat inputs - specifying the return replies
  */
-let alphabetResponses = ['Message 1', 'Message 2', 'third message', 'fourth message', 'fifth', 'sixth', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+let alphabetResponses = ['I cant believe you just said that', 
+"I must warn you, I'm a terrible listener", 
+"Really? REALLY?! You're gonna say that to a robot on his birthday?!", 
+'fourth message', 
+'fifth', 
+'sixth', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 const [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z] = alphabetResponses;
 console.log(a); 
 console.log(b); 
@@ -35,15 +40,19 @@ const botReply = (msg, reply) => {
   if (msg[0] == 'm') {return m};
   if (msg[0] == 'n') {return n};
   if (msg[0] == 'o') {return o};
-  if (msg[0] == 'd') {return p};
-  if (msg[0] == 'd') {return q};
-  if (msg[0] == 'd') {return d};
-  if (msg[0] == 'd') {return d};
-  if (msg[0] == 'd') {return d};
-  if (msg[0] == 'd') {return d};
-  if (msg[0] == 'd') {return d};
-  if (msg[0] == 'd') {return d};
-  if (msg[0] == 'd') {return d};
+  if (msg[0] == 'p') {return p};
+  if (msg[0] == 'q') {return q};
+  if (msg[0] == 'r') {return r};
+  if (msg[0] == 's') {return s};
+  if (msg[0] == 't') {return t};
+  if (msg[0] == 'u') {return u};
+  if (msg[0] == 'v') {return v};
+  if (msg[0] == 'w') {return w};
+  if (msg[0] == 'x') {return x};
+  if (msg[0] == 'y') {return y};
+  if (msg[0] == 'z') {return z};
+  if (msg[0] == 'A') {return A};
+
 return 'You typed in a symbol I wasnt expecting!';
 };
 // };
@@ -119,5 +128,3 @@ const handleChatSubmit = (event) => {
 
 const submitForm = document.getElementById("chat-form");
 submitForm.addEventListener ('submit', handleChatSubmit);
-
- mike easter egg june 9h 
