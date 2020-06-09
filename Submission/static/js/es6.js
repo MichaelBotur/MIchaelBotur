@@ -26,14 +26,16 @@ const avengers = [
 ];
  
 let welcomeMessage = (msgObj)=>{
-const { name, msg } = msgObj; //THIS WHOLE CODE BLOCK - MIKE UNSURE WHERE WE ARE HEADED//
+const { name, msg } = msgObj;
+
 console.log(name);  //I've attempted to destructure my msjObj here but I doubt it works//
 console.log(msg);//I've attempted to destructure my msjObj here but I doubt it works//
 const message = `   
   👋 ${msg} ${name} 👋 
 `;
+
 console.log(message)}; //Mike unsure how the code is supposed to perform/behave//
-welcomeMessage ({name = 'Mickey B', msg = 'Greetings from MB Developer'});
+welcomeMessage ({name:'Mickey B', msg: 'Greetings from MB Developer'});
 
 for (let avenger of avengers) { 
 const { name, alias } = avenger;
