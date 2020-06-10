@@ -33,12 +33,12 @@ const message = `
   👋 ${msg} ${name} 👋 
 `;
 console.log(message)}; //Mike unsure how the code is supposed to perform/behave//
-welcomeMessage ({name = 'Mickey B', msg = 'Greetings from MB Developer'});
+welcomeMessage ({name: 'Mickey B', msg: 'Greetings from MB Developer'});
 
 for (let avenger of avengers) { 
 const { name, alias } = avenger;
 // I am destructuring the avengers array within its own loop and trying to destructure the loop by separating at curly braces {}
 if (alias== 'Batman') {
-  console.log('TypeError BATMAN IS NOT AN AVENGER' + alias)
+  console.log('TypeError' +alias + 'IS NOT AN AVENGER')
   return 'TypeError BATMAN IS NOT AN AVENGER'
 }console.log(avenger)}
