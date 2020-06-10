@@ -1,4 +1,4 @@
-/ array to track the chat messages
+// array to track the chat messages
 const chatLog = [];
 
 // chat message object constructor
