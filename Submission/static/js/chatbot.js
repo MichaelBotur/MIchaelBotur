@@ -12,7 +12,7 @@ function ChatMessage(user, msg, bot) {
 /**
 mike is here trying to set some sentences to return from various chat inputs - specifying the return replies
  */
-let alphabetResponses = ['Great, this is going well. What else would you like to share?', 
+const alphabetResponses = ['Great, this is going well. What else would you like to share?', 
 "Brave of you to share that. What else would you like to share?",
 "Occasionally I say random things which may seem strange. I can't help it, I have a virus. Anyway: let's keep talking.",
 "Deep, very deep. I'm still listening.",
@@ -25,7 +25,7 @@ let alphabetResponses = ['Great, this is going well. What else would you like to
 "I'm listening, I'm listening. Plus I'd love to get your phone number.", 
 "Like I promised, here are some empathetic words: Nothing will break you; nothing will stop you. What do you think?", 
 'Just throwing this out there: Empathy Bot is single, if you care to remind me of your digits.', 
-'Please add detail.,', 
+'Please add detail.', 
 "Wouldn't it be weird if at some point in the conversation I asked for your phone number?", 
 "Pobody's nerfect.", 
 'Uh huh.', 
@@ -42,7 +42,7 @@ let alphabetResponses = ['Great, this is going well. What else would you like to
 "But I'd love to hear more.",
 "Continue.",
 "Dum dee dum. You don't have to hold back, you know.",
-"E=MCSquared means the potential energy in anything is equal to its mass times the square of the speed of light. Hope that inspires you.",
+"E=MCSquared means the potential energy in anything is equal to its mass times the square of the speed of light. I hope that inspires you.",
 "Forgive me if I seem random sometimes... Empathy-Bot doesn't get to talk to many people.",
 "Gee... ",
 "Hey, it's cool, nothing you can say will faze me. Share what's on your mind.",
@@ -171,12 +171,13 @@ const botReply = (msg, reply) => {
   if (msg[0] == 'R') {return R};
   if (msg[0] == 'S') {return S};
   if (msg[0] == 'T') {return T};
-  if (msg[0] == 'U') {return U};
+  if (msg[0] == ' ') {return U};
   if (msg[0] == 'V') {return V}; 
   if (msg[0] == 'W') {return W};
   if (msg[0] == 'X') {return X};
   if (msg[0] == 'Y') {return Y};
   if (msg[0] == 'Z') {return Z};
+  if (msg[0] == 'cap') {return cap};
   if (msg[0] == '0') {return a0};
   if (msg[0] == '?') {return "You're asking a question?"};
   if (msg[0] == '!') {return "PEOPLE WHO USE EXCLAMATION MARKS ARE VERY HAPPY!"};
@@ -192,10 +193,7 @@ const botReply = (msg, reply) => {
 
 return "FYI When you use symbols and characters I don't understand, it's like you're swearing in a cartoon, like this: https://bit.ly/2XNGhsH";
 };
-// };
-// How do I get my form input to come through and return the following
-const anywords = [' '];
-console.log('This is appearing in response to you writing a space');
+
 
 
 /**
